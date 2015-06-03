@@ -1,0 +1,79 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+
+.navbar {
+    width: 100%;
+    height: 44px;
+    background-color: #58595b;
+    position: fixed;
+    /*z-index: 9999;*/
+    opacity: 0.8;
+}
+
+.navbar .social_media {
+    /*padding-left: 60px;
+    padding-top: 5px;*/
+    float: left;
+    /*width: 250px;*/
+    padding: 5px 30px;
+}
+
+
+#page {
+    padding-top: 44px;
+}
+
+.menu .menu__item {
+    display: inline;
+    float: right;
+    padding-right: 20px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.menu .menu__item a {
+    color: #555;
+    text-decoration: none;
+}
+
+.menu .menu__item a:hover {
+    color: #00BFFF;
+}
+
+#block-system-main-menu .menu .last {
+    float: left;
+    font-size: 300%;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 19px;
+
+}
+
+header {
+    border-bottom: thin dotted grey;
+    height: 81px;
+}
+
+footer {
+    padding-top: 800px;
+}
