@@ -6,16 +6,17 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
  */
+ global $base_url;
 ?>
 
 <div class="navbar">
     <div class="social_media">
-        <span class="icon"><a href="http://bakingamoment.com/feed/"><img src="sites/all/themes/recipezen/images/32/social-060_rss.png"/></a></span>
-        <span class="icon"><a href="http://www.facebook.com"><img src="sites/all/themes/recipezen/images/32/social-046_facebook.png"/></a></span>
-        <span class="icon"><a href="http://www.twitter.com"><img src="sites/all/themes/recipezen/images/32/social-043_twitter.png"/></a></span>
-        <span class="icon"><a href="http://www.pinterest.com"><img src="sites/all/themes/recipezen/images/32/social-073_pinterest.png"/></a></span>
-        <span class="icon"><a href="http://plus.google.com"><img src="sites/all/themes/recipezen/images/32/social-080_google_plus.png"/></a></span>
-        <span class="icon"><a href="http://www.instagram.com"><img src="sites/all/themes/recipezen/images/32/social-078_instagram.png"/></a></span>
+        <a href="http://bakingamoment.com/feed/"><img src="<?php echo $base_url; ?>/sites/all/themes/recipezen/images/32/social-060_rss.png"/></a>
+        <a href="http://www.facebook.com"><img src="<?php echo $base_url; ?>/sites/all/themes/recipezen/images/32/social-046_facebook.png"/></a>
+        <a href="http://www.twitter.com"><img src="<?php echo $base_url; ?>/sites/all/themes/recipezen/images/32/social-043_twitter.png"/></a>
+        <a href="http://www.pinterest.com"><img src="<?php echo $base_url; ?>/sites/all/themes/recipezen/images/32/social-073_pinterest.png"/></a>
+        <a href="http://plus.google.com"><img src="<?php echo $base_url; ?>/sites/all/themes/recipezen/images/32/social-080_google_plus.png"/></a>
+        <a href="http://www.instagram.com"><img src="<?php echo $base_url; ?>/sites/all/themes/recipezen/images/32/social-078_instagram.png"/></a>
     </div>
 </div>
 
